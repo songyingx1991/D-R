@@ -1,0 +1,108 @@
+<ion-view id="shoping" hide-back-button="true">
+    <!--//头部-->
+    <ion-nav-title class="item-input-inset header">
+        <label class="item-input-wrapper">
+            <i class="icon ion-search col-10"></i>
+            <input type="text" placeholder="玫瑰 礼品"/>
+        </label>
+    </ion-nav-title>
+    <ion-nav-buttons side="right">
+        <div class="button button-icon ion-ios-cart-outline"></div>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-refresher pulling-text="亲，请耐心等待" pulling-icon="ion-ios-sunny-outline" on-refresh="productrefresh()"></ion-refresher>
+        <ion-slide-box auto-play="true" does-continue="true" >
+            <ion-slide>
+                <div class="picbox"><img src="images/banneshop1.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="picbox"><img src="images/bannershop2.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="picbox"><img src="images/bannershop3.jpg"/></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="list banner list-borderless" style="background:#fff">
+            <div class="item" style="height:40px;">
+                <h2 style="color:#8e8e8d">- 全部分类 -</h2>
+            </div>
+            <div class="item row ">
+                <div class="col-50">
+                    <img src="images/icon1.jpg"/>
+                </div>
+                <div class="col-50">
+                    <img src="images/icon2.jpg"/>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col-50">
+                    <img src="images/icon3.jpg"/>
+                </div>
+                <div class="col-50">
+                    <img src="images/icon4.jpg"/>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col-50">
+                    <img src="images/icon5.jpg"/>
+                </div>
+                <div class="col-50">
+                    <img src="images/icon6.jpg"/>
+                </div>
+            </div>
+        </div>
+        <div class="list product-list">
+            <div class="item row item-borderless" style="margin-bottom:10px;text-align: center">
+                <div class="col"><span>默认</span></div>
+                <div class="col"><span>销量</span></div>
+                <div class="col"><span>价格</span></div>
+                <div class="col"><span>筛选</span></div>
+            </div>
+            <ul class="prole" style="width:100%">
+                <li style="width:47%;padding:10px 0;display: inline-block;margin:1% 1.5%;" ng-repeat="product in shopproducts.products">
+                    <img ng-src="images/{{product.imgsrc}}"/>
+                    <p>{{product.name}}</p>
+                    <h2>{{product.price|currency:"￥"}}</h2>
+                </li>
+            </ul>
+          <!--  <div class="item row item-borderless" ng-repeat="product in shopproducts.products">
+                <div class="col-50">
+                    <img ng-src="images/{{product.imgsrc}}"/>
+                    <p>{{product.name}}</p>
+                    <h2>{{product.price|currency:"￥"}}</h2>
+                </div>
+                <div class="col-50">
+                    <img ng-src="images/{{product.imgsrc}}"/>
+                    <p>{{product.name}}</p>
+                    <h2>{{product.price|currency:"￥"}}</h2>
+                </div>
+            </div>-->
+           <!-- <div class="item row item-borderless">
+                <div class="col-50">
+                    <img src="images/sy_20120329115442035165.jpg"/>
+                    <p>一往情深</p>
+                    <h2>￥119</h2>
+                </div>
+                <div class="col-50">
+                    <img src="images/sy_20120329115442035165.jpg"/>
+                    <p>一往情深</p>
+                    <h2>￥119</h2>
+                </div>
+            </div>
+            <div class="item row item-borderless">
+                <div class="col-50">
+                    <img src="images/sy_20120329115442035165.jpg"/>
+                    <p>一往情深</p>
+                    <h2>￥119</h2>
+                </div>
+                <div class="col-50">
+                    <img src="images/sy_20120329115442035165.jpg"/>
+                    <p>一往情深</p>
+                    <h2>￥119</h2>
+                </div>
+            </div>-->
+
+        </div>
+        <ion-infinite-scroll on-infinite="buttomrefresh()" distance="1%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

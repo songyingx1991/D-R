@@ -1,0 +1,19 @@
+#detail{background:#f1f1f1}
+#detail .banner .picbox{height:258px;}
+#detail .banner .picbox img{height:100%}
+#detail .main1{color:#666;}
+#detail .main1 p{font-size:10px;display:inline-block;margin-right:70px;}
+#detail .main1 h2{color:#f696bc;font-size:20px}
+#detail .main1 span{padding:2px 8px;color:#f696bc;border:1px solid #f696bc;font-size:8px;margin-bottom:5px;}
+
+#detail .main1 .bg-yel{background:#fbfbfb;}
+#detail .main1 .bg-yel .col i{font-size:12px;color:#ccc}
+/*#detail .product{margin-bottom:10px;}*/
+#detail .product .item span{font-size:15px }
+#detail .product .item p{font-size:12px }
+
+#detail2 img{width:100%;}
+
+#pj .tab-title .tab-item-active{color:#f696bc}
+
+#detail .buybuttom{position: fixed;buttom:0;}

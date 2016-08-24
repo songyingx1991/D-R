@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>D&R</title>
+    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/shoping.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/guide.css">
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="css/community-area.css">
+    <link rel="stylesheet" href="css/me.css">
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="views/detailTab/detailTab.js"></script>
+    <script src="views/home/home.js"></script>
+    <script src="views/shoping/shoping.js"></script>
+    <script src="views/community/community.js"></script>
+    <script src="views/community-area/community-area.js"></script>
+    <script src="views/me/me.js"></script>
+<style>
+    .bar-stable .button{border-color:transparent;}
+</style>
+</head>
+<body>
+<!--//导航栏-->
+<ion-nav-bar class="bar-stable">
+    <ion-nav-back-button>
+        <div class="button button-icon ion-ios-arrow-back" style="border-color:#fff;"></div>
+    </ion-nav-back-button>
+</ion-nav-bar>
+<!--//子页面-->
+<ion-nav-view>
+</ion-nav-view>
+
+
+</body>
+</html>

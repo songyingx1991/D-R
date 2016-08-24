@@ -1,0 +1,40 @@
+<ion-view id="me" hide-back-button="true">
+    <ion-nav-title><i style="color:#666">我的主页</i></ion-nav-title>
+    <ion-nav-buttons side="right">
+        <div class="button button-icon ion-ios-cart-outline"></div>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list">
+            <div class="item list-center">
+                <p class="icon"><img src="images/4fd38b47f8223429f038f45ace3b5feb5a00fd84343bf-r31e4K_fw658.jpg"/></p>
+                <p class="loading"><span ng-click="openModal()">{{user}}</span></p>
+            </div>
+            <div class="item row item-borderless list-center">
+                <div class="col-33">
+                    <i class="icon ion-heart"></i><h5>我喜欢</h5>
+                </div>
+                <div class="col-33">
+                    <i class="icon ion-ios-list-outline"></i><h5>历史活动</h5>
+                </div>
+                <div class="col-33">
+                    <i class="icon ion-ios-lightbulb-outline"></i><h5>消息</h5>
+                </div>
+            </div>
+            <div class="item">
+              <span style="margin:0">订单</span> <span style="float:right">退款/退货</span>
+            </div>
+            <div class="item">
+               <span>收货地址</span>
+            </div>
+            <div class="item">
+                <span>客服电话</span>
+            </div>
+            <div class="item">
+                <span>常见问题</span>
+            </div>
+            <div class="item">
+                <span>系统设置</span>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-modal-view  id="loading">
+   <ion-nav-bar>
+       <ion-nav-title>登录</ion-nav-title>
+       <ion-nav-buttons>
+           <div class="button button-clear" ng-click="closeModal()">取消</div>
+       </ion-nav-buttons>
+   </ion-nav-bar>
+    <ion-content>
+        <form>
+            <label class="input1"><span>邮箱</span><input type="email" placeholder="请输入邮箱" ng-model="mail1"/></label>
+            <label class="input2"><span>密码</span><input type="password" placeholder="密码" ng-model="password1"/></label>
+            <i ng-click="closeModal()">登录</i>
+        </form>
+
+    </ion-content>
+
+
+</ion-modal-view>

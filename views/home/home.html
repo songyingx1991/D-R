@@ -1,0 +1,127 @@
+<ion-view class="index" hide-back-button="true">
+    <ion-nav-buttons side="left">
+        <div class="button button-clear button-assertive" >D&R</div>
+    </ion-nav-buttons>
+<ion-nav-title class="item-input-inset header">
+    <label class="item-input-wrapper">
+        <i class="icon ion-search col-10"></i>
+        <input type="text" placeholder="玫瑰 礼品"/>
+    </label>
+</ion-nav-title>
+    <ion-nav-buttons side="right">
+        <div class="button button-icon ion-ios-cart-outline"></div>
+    </ion-nav-buttons>
+        <!--内容-->
+        <ion-content class="has-header">
+            <ion-slide-box auto-play="true" does-continue="true">
+                <ion-slide>
+                    <div class="picbox"><img src="images/banner1.jpg"/></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="picbox"><img src="images/banner2.jpg"/></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="picbox"><img src="images/banner3.jpg"/></div>
+                </ion-slide>
+            </ion-slide-box>
+            <div class="main0">
+                <div class="row">
+                    <div class="col-33 check-btn" ui-sref="tabs.community-area">
+                        <i class="icon ion-heart"></i>
+                        <p>心爱热度</p>
+                    </div>
+                    <div class="col-33 check-btn">
+                        <i class="icon ion-location "></i>
+                        <p>地点攻略</p>
+                    </div>
+                    <div class="col-33 check-btn">
+                        <i class="icon ion-paper-airplane"></i>
+                        <p>最新活动</p>
+                    </div>
+                </div>
+            </div>
+            <ion-slide-box>
+                <ion-slide>
+                    <div class="list card">
+                        <div class="item main1">
+                            <img src="images/detail1.jpg" style="width: 100%"/>
+                            <!--<span class="subTitle"><i>与你最爱的人度过一个完美的情人节</i></span>-->
+                        </div>
+                        <div class="item main1">
+                            <img src="images/detail2.jpg" style="width: 100%"/>
+                            <!--<span class="subTitle"><i>与你最爱的人度过一个完美的情人节</i></span>-->
+                        </div>
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="list card">
+                        <div class="item main1">
+                            <img src="images/detail3.jpg" style="width: 100%"/>
+                            <!--<span class="subTitle"><i>与你最爱的人度过一个完美的情人节</i></span>-->
+                        </div>
+                        <div class="item main1">
+                            <img src="images/detail4.jpg" style="width: 100%"/>
+                            <!--<span class="subTitle"><i>与你最爱的人度过一个完美的情人节</i></span>-->
+                        </div>
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="list card">
+                        <div class="item main1">
+                            <img src="images/detail1.jpg" style="width:100%"/>
+                            <!--<span class="subTitle"><i>星座匹配你说</i></span>-->
+                        </div>
+                        <div class="item main1">
+                            <img src="images/detail2.jpg" style="width:100%"/>
+                            <!--<span class="subTitle"><i>与你最爱的人度过一个完美的情人节</i></span>-->
+                        </div>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+
+
+            <div class="main2">
+                <div class="row">
+                    <div class="col-50" ui-sref="tabs.detailTab.detailxq">
+                        <img ng-src="images/{{detailshow.products[0].imgsrc}}"/>
+                    </div>
+                    <div class="col">
+                        <h4>{{detailshow.products[0].name}}</h4>
+                        <h6>{{detailshow.products[0].desc}}</h6>
+                        <a href="#" class="button button-assertive price-button">{{detailshow.products[0].price |currency:"￥"}}</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <h4>{{detailshow.products[1].name}}</h4>
+                        <h6>{{detailshow.products[1].desc}}</h6>
+                        <a href="#" class="button button-assertive price-button">{{detailshow.products[1].price |currency:"￥"}}</a>
+                    </div>
+                    <div class="col">
+                        <img ng-src="images/{{detailshow.products[1].imgsrc}}"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50" ui-sref="tabs.detailTab.detailxq">
+                        <img ng-src="images/{{detailshow.products[2].imgsrc}}"/>
+                    </div>
+                    <div class="col">
+                        <h4>{{detailshow.products[2].name}}</h4>
+                        <h6>{{detailshow.products[2].desc}}</h6>
+                        <a href="#" class="button button-assertive price-button">{{detailshow.products[2].price |currency:"￥"}}</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <h4>{{detailshow.products[3].name}}</h4>
+                        <h6>{{detailshow.products[3].desc}}</h6>
+                        <a href="#" class="button button-assertive price-button">{{detailshow.products[3].price |currency:"￥"}}</a>
+                    </div>
+                    <div class="col">
+                        <img ng-src="images/{{detailshow.products[3].imgsrc}}"/>
+                    </div>
+                </div>
+            </div>
+
+        </ion-content>
+</ion-view>

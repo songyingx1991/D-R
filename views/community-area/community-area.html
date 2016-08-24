@@ -1,0 +1,54 @@
+<ion-view id="community-area">
+    <ion-nav-title>热门攻略</ion-nav-title>
+    <ion-content>
+        <ion-slide-box auto-play="true" does-continue="true">
+            <ion-slide>
+                <div class="picbox"><img src="images/gl1.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="picbox"><img src="images/gl2.jpg"/></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="list-btn">
+            <div class=" row ">
+                <div class="col-33">
+                    <img src="images/area3.png"/>
+                </div>
+                <div class="col-33">
+                    <img src="images/area4.png"/>
+                </div>
+                <div class="col-33">
+                    <img src="images/area1.png"/>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class="col-33">
+                    <img src="images/area2.png"/>
+                </div>
+                <div class="col-33">
+                    <img src="images/area6.png"/>
+                </div>
+                <div class="col-33">
+                    <img src="images/area5.png"/>
+                </div>
+            </div>
+        </div>
+        <ion-list class="list-detail list-inset" >
+            <ion-item class="item-thumbnail-left item-text-wrap " ng-repeat="item in content.main">
+                <img ng-src="images/{{item.picsrc}}"/>
+                <h2>{{item.texttitle}}</h2>
+                <p>{{item.text}}</p>
+                <div class="row">
+                    <div class="col-50">
+                        <i ng-click="num1($index)" class="icon ion-heart" ng-class="item.active"></i><i>{{item.love}}</i>
+                    </div>
+                    <div class="col-50">
+                        <i ng-click="showPopup($index)" class="icon ion-chatbubble-working" ng-class="item.active1"></i><i>{{item.ping}}</i>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-infinite-scroll on-infinite="buttomrefresh1()" distance="1%"></ion-infinite-scroll>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,9 @@
+#community{background:#eee;}
+#community .community-bottom .item-avatar span{line-height:38px;display: inline-block}
+#community .list .item .row .col-33{margin:0 2px;}
+#community .list .item .row .col-33 img{width:100%}
+/*#community .community-bottom .item{padding-top:0;}*/
+#community .community-bottom .item .col-33{text-align: center;}
+#community .community-bottom .item .col-33 i{color:#ccc}
+#community .community-bottom .item .col-33 .active{color:#f696bc;}
+#community .community-bottom .item .col-33 span{font-size:11px;color:#ccc;margin-left:5px;}

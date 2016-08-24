@@ -1,0 +1,18 @@
+#shoping{background:#efefee}
+#shoping .banner{margin-bottom:10px;}
+#shoping .banner .item-image{margin-bottom:15px}
+#shoping .banner .item{height:95px;margin:10px 0;text-align: center}
+
+#shoping .banner .item .col-50{margin:0 3px}
+#shoping .banner .col-50 img{width:100%;}
+
+#shoping .product-list{background:#fff;}
+#shoping .product-list .item img{width:100%;height:230px}
+#shoping .product-list .item .col-50{margin:2px;border:1px solid #eee;}
+#shoping .product-list .item .col-50 p{font-size:11px;color:#4d4d4d}
+#shoping .product-list .item .col-50 h2{margin-bottom:10px;}
+
+#shoping .product-list .prole li{border:1px solid #eee;margin:3px;}
+#shoping .product-list .prole li img{width:100%;margin-bottom:10px;}
+#shoping .product-list .prole li p{font-size:11px;color:#4d4d4d;padding-left:10px}
+#shoping .product-list .prole li h2{font-size:16px;color:#4d4d4d;margin-top:0;padding-left:10px;margin-bottom:0;}

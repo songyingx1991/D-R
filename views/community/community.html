@@ -1,0 +1,42 @@
+<ion-view id="community" hide-back-button="true">
+        <ion-nav-buttons side="left">
+            <button class="button button-clear"><i style="color:#f696bc">热门</i></button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right">
+            <button class="button button-clear " ui-sref="tabs.community-area"><i style="color:#ccc">约会攻略</i></button>
+        </ion-nav-buttons>
+
+    <ion-content>
+        <div class="list card community-bottom" ng-repeat="item in data.main">
+            <div class="item item-avatar ">
+                <img ng-src="images/{{item.namesrc}}"/>
+                <span>{{item.name}}</span>
+            </div>
+            <div class="item item-borderless item-text-wrap">
+                <p>{{item.text}}</p>
+                <div class="row">
+                    <div ng-click="num($index)" class="col-33"><img ng-src="images/{{item.picsrc}}"/></div>
+                    <div ng-click="num($index)" class="col-33"><img ng-src="images/{{item.picsrc}}"/></div>
+                    <div ng-click="num($index)" class="col-33"><img ng-src="images/{{item.picsrc}}"/></div>
+                </div>
+                <div class="row">
+                    <div ng-click="num($index)" class="col-33"><img ng-src="images/{{item.picsrc}}"/></div>
+                    <div ng-click="num($index)" class="col-33"><img ng-src="images/{{item.picsrc}}"/></div>
+                    <div ng-click="num($index)" class="col-33"><img ng-src="images/{{item.picsrc}}"/></div>
+                </div>
+            </div>
+            <div class="item row">
+                <div class="col-33">
+                    <i ng-click="num($index)" class="icon ion-eye"></i><span>{{item.view}}</span>
+                </div>
+                <div class="col-33">
+                    <i ng-click="showPopup($index)" class="icon ion-chatbox-working"ng-class="item.active1" ></i><span>{{item.ping}}</span>
+                </div>
+                <div class="col-33">
+                    <i ng-click="num1($index)" class="icon ion-thumbsup" ng-class="item.active"></i><span>{{item.like}}</span>
+                </div>
+            </div>
+        </div>
+        <ion-infinite-scroll on-infinite="buttomrefresh()" distance="1%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

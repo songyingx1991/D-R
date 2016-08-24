@@ -1,0 +1,24 @@
+/**
+ * Created by dell on 2016/8/6.
+ */
+angular.module("myapp").controller("shopingCtrl",function($scope,$http){
+    $scope.shopproducts={};
+    $http.get("data/showpro.json").success(function(data){
+        $scope.shopproducts.products=data;
+    });
+    /*$scope.productrefresh=function(){
+        $http.get("data/showpro.json").success(function(data){
+            $scope.shopproducts.products=data;
+            $scope.$broadcast("scroll.refreshComplete");
+        }).error(function(){
+            shopproducts.error="错错错，都是你的错";
+        })
+    };*/
+    $scope.buttomrefresh=function(){
+        $http.get("data/showpro.json").success(function(data){
+            Array.prototype.push.apply($scope.shopproducts.products,data)//转化为angular的方法
+        }).finally(function(){
+            $scope.$broadcast("scroll.infiniteScrollComplete");
+        })
+    }
+});

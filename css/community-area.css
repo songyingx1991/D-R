@@ -1,0 +1,8 @@
+#community-area{background:#e3e8ec}
+#community-area .list-btn .col-33{height:105px;width:100px;
+    text-align: center;line-height:105px;}
+#community-area .list-btn .col-33 img{width:90%;}
+#community-area .list-detail .item{margin-bottom:10px;border-top:0;}
+#community-area .list-detail .item-thumbnail-left .col-50{text-align: center;}
+#community-area .list-detail .item-thumbnail-left .col-50 i{color:#ccc;margin-right:5px}
+#community-area .list-detail .item-thumbnail-left .col-50 .active{color:#f696bc}

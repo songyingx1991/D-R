@@ -1,0 +1,91 @@
+<ion-view id="detail">
+    <ion-nav-title style="color:#666">一往情深</ion-nav-title>
+    <ion-nav-buttons side="right">
+        <div class="button button-icon ion-ios-cart-outline"></div>
+    </ion-nav-buttons>
+
+    <ion-content class="has-tabs">
+        <ion-slide-box class="banner">
+            <ion-slide>
+                <div class="picbox"><img src="images/d1.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="picbox"><img src="images/d2.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="picbox"><img src="images/d3.jpg"/></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="main1 list ">
+            <div class="item item-borderless">
+
+                <p>{{products.product[0].name}}</p>
+                <span>3折</span> <span style="background:#f696bc;color:#fff;float:right">加入购物车</span>
+                <h2>{{products.product[0].price | currency:"￥"}}</h2>
+            </div>
+            <div class="item row bg-yel  item-borderless " >
+                <div class="col">
+                    <i class="icon ion-ios-pricetags-outline"></i>
+                    <i>独家发售</i>
+                </div>
+                <div class="col">
+                    <i class="icon ion-ios-pricetags-outline"></i>
+                    <i>仓内质检</i>
+                </div>
+                <div class="col">
+                    <i class="icon ion-ios-pricetags-outline"></i>
+                    <i>统一熨烫</i>
+                </div>
+                <div class="col">
+                    <i class="icon ion-ios-pricetags-outline"></i>
+                    <i>严密包装</i>
+                </div>
+            </div>
+        </div>
+        <div class="list product">
+            <div class="item  item-borderless">
+                <h3>| 商品评价</h3>
+            </div>
+            <div class="item item-avatar-left ">
+                <img src="images/4fd38b47f8223429f038f45ace3b5feb5a00fd84343bf-r31e4K_fw658.jpg"/>
+                <span>阳光心情</span>
+            </div>
+            <div class="item item-borderless">
+                <p>收到礼物感觉很惊喜，亲爱的知道后感动得哭了</p>
+            </div>
+            <div class="item item-avatar-left ">
+                <img src="images/4fd38b47f8223429f038f45ace3b5feb5a00fd84343bf-r31e4K_fw658.jpg"/>
+                <span>阳光心情</span>
+            </div>
+            <div class="item item-borderless">
+                <p>收到礼物感觉很惊喜，亲爱的知道后感动得哭了</p>
+            </div>
+        </div>
+       <!-- <div class="buybuttom row" style="background:#ccc;">
+            <div class="col-33">
+                <i class="icon ion-chatbubble-working"></i>
+                <p>联系卖家</p>
+            </div>
+            <div class="col-33">
+                <p>加入购物车</p>
+            </div>
+            <div class="col-33">
+                <p>立即购买</p>
+            </div>
+
+        </div>-->
+        <ion-tabs>
+            <ion-tab title="图文详情" href="#tabs/detailTab/detailxq">
+                <ion-nav-view name="detailxq"></ion-nav-view>
+            </ion-tab>
+            <ion-tab title="附加说明" ui-sref="tabs.detailTab.detailxq1">
+                <ion-nav-view name="detailxq1"></ion-nav-view>
+            </ion-tab>
+            <ion-tab title="用户评价" href="#tabs/detailTab/detailpj">
+                <ion-nav-view name="detailpj"></ion-nav-view>
+
+            </ion-tab>
+        </ion-tabs>
+
+    </ion-content>
+</ion-view>
