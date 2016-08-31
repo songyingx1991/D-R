@@ -17,3 +17,7 @@
 #pj .tab-title .tab-item-active{color:#f696bc}
 
 #detail .buybuttom{position: fixed;buttom:0;}
+
+#detail .menucls a{position:absolute;left:1rem;top:2rem;color:#666;text-align: center;}
+#detail .navarrow{color:#ccc;line-height:33px;margin-left:5px;}
+#detail .navtitle{text-align: center;color:#666;line-height:33px;font-size:16px;width:90%;}

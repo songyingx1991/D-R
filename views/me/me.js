@@ -2,6 +2,8 @@
  * Created by hxsd on 2016/8/22.
  */
 angular.module("myapp").controller("meCtrl",function($scope,$ionicModal){
+    $scope.user="登录/注册";
+    $scope.use={};
         // 构造模式对话框
         $ionicModal.fromTemplateUrl('views/loading/loading.html', {
             scope: $scope,       // 作用域使用父作用域
@@ -17,7 +19,8 @@ angular.module("myapp").controller("meCtrl",function($scope,$ionicModal){
             $scope.modal.show();
         };
 
-        $scope.closeModal = function() {
+        $scope.closeModal = function(username) {
+            $scope.user=username;
             $scope.modal.hide();
         };
         // 创建新联系人
@@ -31,17 +34,11 @@ angular.module("myapp").controller("meCtrl",function($scope,$ionicModal){
             $scope.modal.remove();
         });
         // 在移除modal时执行一些动作
-        $scope.user="登录/注册";
         $scope.$on('modal.removed', function() {
             // 在这里执行一些操作
-            if(!$scope.mail1&&!$scope.password1){
-                $scope.user=$scope.mail1;
-                console.log(1);
-            }
-
         });
 
 
 
 
-})
+});
